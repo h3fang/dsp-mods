@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace DSP_Mods.SphereProgress
 {
-    [BepInPlugin("org.fezeral.plugins.sphereprogress", "Sphere Progress Plug-In", "1.0.0.0")]
+    [BepInPlugin("org.fezeral.plugins.sphereprogress", "Sphere Progress Plug-In", "1.1.0.0")]
     class SphereProgress : BaseUnityPlugin
     {
         Harmony harmony;
@@ -35,7 +35,7 @@ namespace DSP_Mods.SphereProgress
                     if (dysonSphere != null)
                     {                    
                         // Structure Progress
-                        structValue.GetComponentInChildren<Text>().text = $"{dysonSphere.totalConstructedPoint} / {dysonSphere.totalStructurePoint}";
+                        structValue.GetComponentInChildren<Text>().text = $"{dysonSphere.totalConstructedStructurePoint} / {dysonSphere.totalStructurePoint}";
 
                         // Cell Progress
                         int totalCp = 0, cpOrdered = 0, totalCpMax = 0;
