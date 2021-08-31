@@ -1,7 +1,6 @@
 ## Introduction
-- Forked from <https://github.com/fezhub/DSP-Mods>.
-- Removed large image files.
-- Adjusted the directory structure.
+- Modified from <https://github.com/crecheng/DSPMod>.
+- Adjusted some parameters.
 - Added the Makefile for Steam Proton environment in Linux.
 
 ## Requirements
@@ -11,10 +10,10 @@
 - [mono](https://www.mono-project.com/)
 
 ## Licence
-LGPL-2.1
+Apache-2.0
 
 ## Acknowledgements
 All trademarks, copyright, and resources related to Dyson Sphere Project itself, remain the property of Gamera Game and Youthcat Studio as applicable according to the license agreement distributed with Dyson Sphere Program.
 
-Thanks <https://github.com/fezhub/DSP-Mods> for the great mod.
+Thanks <https://github.com/crecheng/DSPMod> for the great mod.
 

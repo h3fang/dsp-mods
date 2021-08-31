@@ -1,4 +1,4 @@
-mods := CopyInserters SphereProgress
+mods := PlanetMiner
 objs := $(foreach mod,$(mods),$(mod)/bin/Release/$(mod).dll)
 
 all: $(objs)
@@ -8,10 +8,7 @@ all: $(objs)
 install: $(objs)
 	mv $^ "$(HOME)/.local/share/Steam/steamapps/common/Dyson Sphere Program/BepInEx/plugins"
 
-CopyInserters/bin/Release/CopyInserters.dll: CopyInserters/CopyInserters.csproj
-	msbuild $< -p:Configuration=Release
-
-SphereProgress/bin/Release/SphereProgress.dll: SphereProgress/SphereProgress.csproj
+PlanetMiner/bin/Release/PlanetMiner.dll: PlanetMiner/PlanetMiner.csproj
 	msbuild $< -p:Configuration=Release
 
 clean:

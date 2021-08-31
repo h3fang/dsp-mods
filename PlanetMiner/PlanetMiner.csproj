@@ -1,13 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AEF45E3E-3676-418D-AF59-D2708E797D8D}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>DSP_Mods.CopyInserters</RootNamespace>
-    <AssemblyName>CopyInserters</AssemblyName>
+    <RootNamespace>DSP_Mods.PlanetMiner</RootNamespace>
+    <AssemblyName>PlanetMiner</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -22,8 +21,6 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -83,6 +80,9 @@
       <HintPath>$(HOME)/.local/share/Steam/steamapps/common/Dyson Sphere Program/BepInEx/core/MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="netstandard">
+      <HintPath>$(HOME)/.local/share/Steam/steamapps/common/Dyson Sphere Program/DSPGAME_Data/Managed/netstandard.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(HOME)/.local/share/Steam/steamapps/common/Dyson Sphere Program/DSPGAME_Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
@@ -97,8 +97,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlayerAction_Build_Patch.cs" />
-    <Compile Include="CopyInserters.cs" />
+    <Compile Include="PlanetMiner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
